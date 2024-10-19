@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GutenDex Books</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container">
+        <h1>GutenDex</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+
+      <div class="controls">
+        <input type="text" id="searchBar" placeholder="Search by title..." />
+        <select id="genreFilter">
+          <option value="">All Genres</option>
+          <!-- Dynamically populate genres -->
+        </select>
+      </div>
+      
+      <div id="spinner" class="spinner" style="display: none">
+        <!-- You can design your spinner using CSS -->
+        Loading...
+      </div>
+
+      <div id="booksContainer" class="books-grid">
+        <!-- Books will be displayed here -->
+      </div>
+      <!-- Pagination Controls -->
+      <div class="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="currentPage"></span>
+        <button id="nextPage">Next</button>
+      </div>
+      <div id="pagination1">
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
